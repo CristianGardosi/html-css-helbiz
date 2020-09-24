@@ -142,7 +142,7 @@ nav{
     padding-top: 50px;
     padding-bottom: 50px;
 }
-
+/* mono */
 .mono-bike p{
     color: black;
 }
@@ -161,14 +161,12 @@ nav{
     margin: 20px auto;
     height: 350px;
 }
-
+/* bike */
 .right-tab-bike img{
     display: block;
     margin: 20px auto;
     height: 350px;
 }
-/* Mono/bike media query */
-
 
 /* HOW DOES IT WORKS? */
 .how{
@@ -201,14 +199,31 @@ nav{
 
 /* 1+2 COLUMNS SECTION */
 .big-col{
+    position: relative;
     height: 450px;
     background-image: url('../img/scooter-bg.jpg');
     background-size: cover;
     margin-bottom: 30px;
 }
 
+.big-col-text h1, p{
+    margin: 20px;
+    color: white;
+}
 
+.big-col-text a{
+    margin: 30px;
+    color: white;
+}
 
+/* big col media query */
+@media screen and (min-width: 768px){
+    .big-col-text{
+        position: absolute;
+        left:55%;
+        top:25%;
+    }
+}
 
 
 
