@@ -1,5 +1,14 @@
+/* GENERAL STYLES */
 body{
     font-family: 'Open Sans Condensed', sans-serif;
+}
+/* typography */
+h1{
+    font-size: 40px;
+}
+
+p{
+    font-size: 18px;
 }
 
 /* CONTAINERS STYLES */
@@ -34,10 +43,6 @@ nav{
     height: 60px;
     line-height: 60px;
 }
-/* Left element (logo) */
-.leftside-nav{
-
-}
 /* Right elements (navigation links) */
 .rightside-nav li{
     display: inline-block;
@@ -64,7 +69,7 @@ nav{
     color: white;
     
 }
-
+/* Nav media query */
 @media screen and (max-width: 767px){
     .rightside-nav{
         display: none;
@@ -72,4 +77,48 @@ nav{
 }
 
 /* HEADER JUMBOTRON */
+.jumbotron{
+    position: relative;
+    height: 450px;
+    position: relative;
+    background-image: url('../img/hero-bg.jpg');
+    background-size: cover;
+}
+
+.jumbotron-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.jumbotron-text h1, p{
+    color: white;
+    margin: 15px;
+}
+
+.jumbotron-text a img{
+    width: 30%;
+}
+/* Jumbotron media query */
+@media screen and (max-width: 767px){
+    .jumbotron{
+        height: 400px;
+        background-position: left;
+    }
+
+    .jumbotron-text h1, p{
+        margin: 10px;
+    }
+
+    .jumbotron-text h1{
+        font-size: 30px;
+    }
+
+    .jumbotron-text a img{
+        width: 50%;
+    }
+
+}
 
