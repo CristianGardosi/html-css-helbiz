@@ -1,0 +1,75 @@
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* CONTAINERS STYLES */
+.container{
+    width: 1350px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.small-container{
+    width: 1170px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.small-container::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* NAVBAR STYLES */
+nav{
+    height: 60px;
+    line-height: 60px;
+}
+/* Left element (logo) */
+.leftside-nav{
+
+}
+/* Right elements (navigation links) */
+.rightside-nav li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.rightside-nav li:first-child{
+    padding-left: 0;
+}
+  
+  .rightside-nav li:last-child{
+    padding-right: 0;
+}
+
+  .rightside-nav li a{
+    color: black;
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.rightside-nav li a:hover{
+    background-color: black;
+    color: white;
+    
+}
+
+@media screen and (max-width: 767px){
+    .rightside-nav{
+        display: none;
+    }
+}
+
+/* HEADER JUMBOTRON */
+
